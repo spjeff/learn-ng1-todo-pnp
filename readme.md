@@ -1,0 +1,1 @@
+[Call SharePoint Online (SPO) REST api from AngularJS (1x) Lite Server with PNP.js](http://www.spjeff.com/2018/09/16/call-sharepoint-online-spo-rest-api-from-angularjs-1x-lite-server-with-pnp-js/)
