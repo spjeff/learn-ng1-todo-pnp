@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="todo.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sp-pnp-js/3.0.10/pnp.min.js"></script>
+</head>
+
+<body>
+
+
+    <h1>Todo List</h1>
+
+    <div ng-app="todoApp">
+        <div ng-controller="todoCtl">
+
+            {{remain()}} out of {{todos.length}}
+            <a href="" ng-click="archive()">[archive]</a>
+
+            <hr>
+
+            <ul>
+                <li ng-repeat="t in todos">
+                    <input type="checkbox" name="" id="" ng-model="t.done">
+                    <input type="text" name="" id="" ng-model="t.name">
+                </li>
+            </ul>
+            <hr>
+
+            <form>
+
+                <input type="text" name="" id="" ng-model="newTodo">
+                <button ng-click="add()">Add</button>
+            </form>
+
+
+            <hr>
+
+            <input type="button" value="Save" ng-click="save()">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
